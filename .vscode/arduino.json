@@ -2,6 +2,7 @@
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328old",
     "sketch": "jim-synth.ino",
-    "port": "COM5",
-    "output": "../build"
+    "port": "COM3",
+    "output": "../build",
+    "programmer": "Arduino as ISP"
 }
