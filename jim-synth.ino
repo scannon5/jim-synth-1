@@ -148,8 +148,23 @@ void debouncer2Changed(int newValue)
 
 void debouncer3Changed(int newValue)
 {
-
+    if (pattern0[0] == 75)
+    {
+        changePattern0Interval(25);
+    }
+    else
+    {
+        changePattern0Interval(75);
+    }
 } 
+
+void changePattern0Interval(int newInterval)
+{
+    for (int i = 0; i < pattern0Length; i++)
+    {
+        pattern0[i] = newInterval;
+    }
+}
 
 void lightCurrentLed()
 {
